@@ -28,7 +28,7 @@ var DiceGame={
   turn : 0,
   d1 : 1,
   d2 : 1,
-  name : 'please login to play',
+  name : 'name',
   score : 0,
 
   play: function() {
@@ -157,7 +157,7 @@ var LoginView = {
       m("h1", {class: 'title'}, 'Login'),
       m("div", {
       	   "id":"g_id_onload",
-      	   "data-client_id":"699556284511-dvm6i3jcomibost2j73d6aq3frqca55v.apps.googleusercontent.com",
+      	   "data-client_id":"825086153968-dv4sjktkftjumcfu42m8epmp4lsvrlaf.apps.googleusercontent.com",
            "data-callback": "handleCredentialResponse"}),
       m("div", {
       	   "class":"g_id_signin",
@@ -179,7 +179,7 @@ function handleCredentialResponse(response) {
 var Hello = {
    view: function() {
    	return m('div', {class:'container'}, [
-           m("h1", {class: 'title'}, 'I alone am the Honored Dice Game'),
+           m("h1", {class: 'title'}, 'Dice Game'),
            m('div',{class: 'tile is-ancestor'},[
            m("div", {class: 'tile'}, m('div',{class:'tile is-child box'},m(LoginView))),
            m("div", {class: 'tile'}, m('div',{class:'tile is-child box'},m(DiceView))),
